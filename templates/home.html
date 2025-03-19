@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Hi, I'm <span>Bhumisha Parchani</span></h1>
+        <p>Turning ideas into reality through <strong>code and creativity</strong>.</p>
+        <a href="{{ url_for('static', filename='resume/bhumisha_resumeupdated.pdf') }}" class="btn" target="_blank">Download Resume</a>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section class="about">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>I'm an aspiring <strong>Software Engineer</strong> currently pursuing a <strong>Bachelor of Engineering in IT</strong> at VESIT, Mumbai. My passion lies in building <strong>scalable, user-friendly applications</strong> and exploring innovative solutions in web development.</p>
+            <p>Beyond coding, I love <strong>reading, writing, and playing chess</strong>. I believe in continuous learning and strive to blend creativity with technology.</p>
+        </div>
+        <div class="about-image">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Bhumisha Parchani">
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section class="education">
+    <h2>Education</h2>
+    <div class="education-list">
+        <div class="education-item">
+            <h3>Bachelor of Engineering in Information Technology</h3>
+            <p class="institution">Vivekanand Education Society’s Institute of Technology, Mumbai</p>
+            <p class="duration">Nov 2022 - Present</p>
+            <p class="details">CGPA: 8.33 (Fifth Semester)</p>
+        </div>
+        <div class="education-item">
+            <h3>Higher Secondary School Education</h3>
+            <p class="institution">Maharaja Sayijirao Vidyalay, Satara</p>
+            <p class="duration">May 2022</p>
+        </div>
+        <div class="education-item">
+            <h3>Secondary School Education</h3>
+            <p class="institution">Bharati Vidyapeeth’s Dr. J.W Airan Academy, Satara</p>
+            <p class="duration">Jul 2020</p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-list">
+        <div class="skills-category">
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>C</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+            </ul>
+        </div>
+        <div class="skills-category">
+            <h3>Databases</h3>
+            <ul>
+                <li>SQL</li>
+                <li>SQLite</li>
+            </ul>
+        </div>
+        <div class="skills-category">
+            <h3>Tools</h3>
+            <ul>
+                <li>Git</li>
+                <li>VSCode</li>
+                <li>AWS</li>
+                <li>Figma</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

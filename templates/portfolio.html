@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/portfolio.css') }}">
+
+<h1>My Projects</h1>
+
+<div class="projects-container">
+    {% for project in projects %}
+    <div class="project-card">
+        <img src="{{ project.image }}" alt="{{ project.title }}" class="project-image">
+        <h2>{{ project.title }}</h2>
+        <p class="project-description">{{ project.description }}</p>
+        <a href="{{ project.link }}" class="project-link" target="_blank">View Project</a>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

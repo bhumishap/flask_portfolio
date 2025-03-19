@@ -1,0 +1,30 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between fields */
+    max-width: 400px; /* Restrict width for better readability */
+    margin: auto; /* Center form */
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 100%; /* Make fields take full width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: fit-content;
+    align-self: center; /* Center the button */
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

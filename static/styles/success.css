@@ -1,0 +1,47 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #dbdbdb; 
+    color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+.container {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff6f61; /* Cute pink heading */
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.success-icon {
+    font-size: 50px;
+    color: #ff6f61;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff6f61; /* Bright pink button */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d95c50;
+}
+
